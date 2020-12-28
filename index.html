@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="jquery.js"></script>
+<body>
+    <header>
+        <h1>To-Do App</h1>
+    </header>
+
+    <div class="container">
+        <h2>Tasks</h2>
+        <form>
+            <input type="text" name="new-task" id="new-task" placeholder="Enter New Task">
+            <input type="button"  id="submit" value="submit">
+        </form>
+        <div class="tasks">
+          
+        </div>
+    </div>
+    
+    <script>
+        $('#submit').mousedown(function(){
+            $('.tasks').append(' <div class="task"><p>'+ $('#new-task').val()+'</p></div>')
+        })
+
+        $('.cancel').mousedown(function(){
+            $(this).parent().css('background','red')
+            console.log('hi')
+        })
+    </script>
+</body>
+</html>
