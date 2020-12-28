@@ -66,3 +66,15 @@ input[type=button]{
     color: #fff;
     border: 2px solid rgb(10,20,100);
 }
+
+
+@media screen and (max-width:462px){
+    .container{
+        width: 90%;
+    }
+
+    input[type=text]{
+        width:70%;
+    }
+
+}
